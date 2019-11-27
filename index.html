@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Metodo Euler / Euler Mejorado</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container text-center mt-5">
+    <h1>Metodo Euler / Euler Mejorado</h1>
+    <p><b>Ejemplos para validar la aplicación</b></p>
+    <p><b>Ecuación</b>: x-y+2 - <b>Valor X</b>: 0 - <b>Valor Y</b>: 2 - <b>Valor H</b>: 0.1 - <b>Valor X Final</b>: 1</p>
+    <p><b>Ecuación</b>: x+y - <b>Valor X</b>: 0 - <b>Valor Y</b>: 1 - <b>Valor H</b>: 0.2 - <b>Valor X Final</b>: 1</p>
+    <div class="form-inline mt-5">
+      <input type="text" class="form-control mb-2 col-md-4 mr-2" id="txtEcuacion" placeholder="Ingrese la Ecuación"
+        value="">
+      <input type="number" class="form-control mb-2 col-md-3 mr-2" id="txtValorX" placeholder="Valor X"
+        value="">
+      <input type="number" class="form-control mb-2 col-md-3 mr-2" id="txtValorY" placeholder="Valor Y"
+        value="">
+      <input type="number" class="form-control mb-2 col-md-3 mr-2" id="txtValorH" placeholder="Valor H"
+        value="">
+      <input type="number" class="form-control mb-2 col-md-3 mr-2" id="txtValorXFinal" placeholder="Valor X Final"
+        value="">
+      <button type="submit" class="btn btn-primary mb-2 col-md-2" id="calcularE">Calcular</button>
+    </div>
+    <br>
+    <div class="alert alert-primary mt-5" role="alert" id="lbResultado">
+
+    </div>
+    <table class="table mb-5">
+      <thead class="thead-dark">
+        <tr>
+          <th>Iteracion</th>
+          <th>Valor X</th>
+          <th>Euler</th>
+          <th>Euler Mejorado</th>
+        </tr>
+      </thead>
+      <tbody id="bodyE">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="js/nerdamer.core.js"></script>
+  <script src="js/Algebra.js"></script>
+  <script src="js/Calculus.js"></script>
+  <script src="js/Solve.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
